@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <!--    </Toolbar>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomlayout"
+        android:id="@+id/Rview"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lg"
+        android:src="@drawable/logo"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="28dp"
+        android:textColor="#B1AEAE"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:id="@+id/bottomlayout">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/back"
+            android:hint="Write here"
+            android:textColorHint="#706F6F"
+            android:layout_toLeftOf="@+id/Sendbtn"
+            android:padding="16dp" />
+        <ImageButton
+            android:layout_width="48dp"
+            android:background="@drawable/back"
+            android:layout_height="48dp"
+            android:id="@+id/Sendbtn"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp"
+            android:src="@drawable/baseline_send_24"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
